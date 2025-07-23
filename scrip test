@@ -1,0 +1,59 @@
+
+                Login
+
+POST http://localhost:8080/api/account/login
+{
+    "email": "ADMINMAIL@gmail.com",
+    "password": "123456"
+}
+
+              lay danh sach
+GET http://localhost:8080/api/admin/packages
+{
+    "email": "ADMINMAIL@gmail.com",
+    "password": "123456"
+}
+        Lay chi tiet Package theo ID
+GET http://localhost:8080/api/admin/packages/1
+
+
+          TaO package
+POST http://localhost:8080/api/admin/packages          
+{
+    "name": "Premium Plan",
+    "price": 50.0,
+    "duration": 90,
+    "description": "Premium support plan"
+}
+  
+       Cap nhat Goi
+PUT http://localhost:8080/api/admin/packages/2
+{
+    "id": 2,
+    "name": "Premium Plus",
+    "price": 75.0,
+    "duration": 120,
+    "description": "Enhanced premium support"
+}
+
+    Xoa Package
+DELETE http://localhost:8080/api/admin/packages/2
+
+Mua Package 
+POST http://localhost:8080/api/packages/buy
+{
+    "packageId": 1
+}
+
+          Smoking log
+POST http://localhost:8080/api/packages/smoking-log          
+{
+    "cigarettes": 5,
+    "cost": 2.50,
+    "healthStatus": "Feeling okay",
+    "cravingLevel": 8,
+    "notes": "Hút thuốc vì căng thẳng"
+}
+
+       Hủy gói
+DELETE http://localhost:8080/api/packages/1/cancel

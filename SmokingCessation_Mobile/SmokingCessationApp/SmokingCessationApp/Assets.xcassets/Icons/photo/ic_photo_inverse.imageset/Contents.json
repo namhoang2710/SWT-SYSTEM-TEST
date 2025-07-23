@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_photo_inverse.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

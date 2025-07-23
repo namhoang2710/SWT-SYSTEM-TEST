@@ -1,0 +1,279 @@
+.leaderboardContainer {
+    background: linear-gradient(180deg, #d3cceb 0%, #e9e5f4 100%); /* Soft purple gradient */
+    border-radius: 1.5rem;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    color: #1e293b; /* Dark text for contrast */
+  }
+  
+  .leaderboardContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: linear-gradient(to right, #9a86cc, #b4a5d8); /* Matching softer purple gradient */
+  }
+  
+  /* Hide the main title as it's implied by the new design */
+  .title {
+    display: none;
+  }
+  
+  .crownIcon {
+    width: 3rem;
+    height: 3rem;
+    color: #f0c419; /* Keeping gold for crown */
+    filter: drop-shadow(0 4px 8px rgba(240, 196, 25, 0.3));
+    position: absolute;
+    top: -1.5rem; /* Position above avatar */
+    z-index: 3;
+  }
+  
+  .topPlayers {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end; /* Align avatars at the bottom */
+    margin-bottom: 2.5rem;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 1; /* Ensure top players are above other elements */
+  }
+  
+  .topPlayerItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .rank1 {
+    order: 2; /* Make rank 1 appear in the middle */
+    transform: translateY(-20px); /* Lift up the first rank slightly */
+  }
+  
+  .rank2 {
+    order: 1; /* Place rank 2 before rank 1 */
+  }
+  
+  .rank3 {
+    order: 3; /* Place rank 3 after rank 1 */
+  }
+  
+  .avatarWrapper {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #b4a5d8, #d3cceb); /* Softer purple gradient border */
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 2;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+  
+  .rank1 .avatarWrapper {
+    width: 120px;
+    height: 120px;
+    padding: 6px;
+    background: linear-gradient(45deg, #f0c419, #f7d740); /* Keeping softer gold gradient for rank 1 */
+    box-shadow: 0 8px 20px rgba(240, 196, 25, 0.3);
+  }
+  
+  .userAvatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+  
+  .topPlayerName {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1e293b; /* Dark text for names */
+    text-shadow: none;
+  }
+  
+  .topPlayerScore {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #8a2be2; /* A shade of blue-violet for scores, complements purple */
+    text-shadow: none;
+  }
+  
+  .searchBarContainer {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .searchInput {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid #d3cceb; /* Lighter border for search input */
+    background: #f4f3f9; /* Light background for search input */
+    color: #1e293b;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .searchInput::placeholder {
+    color: #64748b;
+  }
+  
+  .searchInput:focus {
+    border-color: #8a2be2;
+    box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.2);
+  }
+  
+  .searchButton {
+    background: #8a2be2; /* A matching purple button */
+    border: none;
+    border-radius: 50%;
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(138, 43, 226, 0.3);
+  }
+  
+  .searchButton:hover {
+    background: #7a1dcc;
+    transform: translateY(-1px);
+  }
+  
+  .searchButton svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: white;
+  }
+  
+  .userList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.6); /* More transparent for a lighter feel */
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .userItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    background: white;
+    transition: transform 0.2s ease;
+  }
+  
+  .userItem:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-left-color: #b4a5d8; /* Lighter purple highlight */
+  }
+  
+  .rank {
+    font-weight: 700;
+    color: #8a2be2; /* A deeper purple for rank */
+    width: 30px;
+    text-align: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+  
+  .userAvatarSmall {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #d3cceb; /* Lighter border for small avatar */
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+  
+  .userInfo {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 0;
+  }
+  
+  .userName {
+    font-weight: 600;
+    color: #1e293b;
+    text-decoration: none;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .userName:hover {
+    color: #8a2be2; /* Deeper purple on hover */
+  }
+  
+  .userStats {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+  }
+  
+  .statItem {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    white-space: nowrap;
+    color: #8a2be2;
+    font-weight: 700;
+  }
+  
+  .statItem svg {
+    width: 0.9rem;
+    height: 0.9rem;
+    color: #8a2be2; /* Deeper purple for icons */
+  }
+  
+  .loading, .error {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.125rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    margin-top: 1rem;
+    color: #1e293b;
+  }
+  
+  .error {
+    background: #fef2f2;
+    color: #ef4444;
+    border: 1px solid #fee2e2;
+    box-shadow: 0 4px 6px -1px rgba(239, 68, 68, 0.1);
+  }
+  

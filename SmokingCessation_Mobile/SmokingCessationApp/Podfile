@@ -1,0 +1,30 @@
+platform :ios, '14.0'
+use_frameworks!
+
+target 'SmokingCessationApp' do
+  # Networking
+  pod 'Alamofire', '~> 5.6'
+
+  # Reactive
+  pod 'RxSwift', '~> 6.5'
+  pod 'RxCocoa', '~> 6.5'
+
+  # Dependency Injection
+  pod 'Swinject', '~> 2.8'
+
+  # Layout DSL
+  pod 'SnapKit', '~> 5.0'
+
+  # Animations
+  pod 'lottie-ios', '~> 4.2'
+
+  # Toast 
+  pod "ToastViewSwift"
+
+  # Stripe
+  pod 'StripePaymentSheet'
+  # (Optional) If you need Rx wrappers for Alamofire:
+  # pod 'RxAlamofire', '~> 6.2'
+  
+  pod 'Kingfisher', '~> 8.0'
+end

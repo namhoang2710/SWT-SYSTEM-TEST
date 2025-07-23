@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_badge_ribbon_inverse.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

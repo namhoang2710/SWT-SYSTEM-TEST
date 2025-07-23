@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_calculator.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Country=Gambia.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SmokingCessationApplication<smoking-cessation>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.fu.swp391.group1.smokingcessation.SmokingCessationApplication",
+            "projectName": "smoking-cessation",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

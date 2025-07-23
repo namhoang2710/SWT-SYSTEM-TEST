@@ -1,0 +1,20 @@
+# Icon files, folder settings, DS_Store, etc.
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ─── CocoaPods ─────────────────────────────────────────────────────────
+/Pods/
+
+# ─── Xcode / Swift ─────────────────────────────────────────────────────
+# Build products
+build/
+DerivedData/
+*.xcworkspace
+!default.xcworkspace
+*.xcuserstate
+xcuserdata/
+*.xccheckout
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_withdraw.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

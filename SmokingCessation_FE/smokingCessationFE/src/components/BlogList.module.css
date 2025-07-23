@@ -1,0 +1,576 @@
+/* BlogList.module.css - Force CSS priority */
+
+/* FORCE CSS PRIORITY với !important nếu cần */
+.container {
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+  border-radius: 12px !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08) !important;
+  padding: 0 !important;
+}
+
+/* Blog Card - Main container */
+.blogCard {
+  background: white !important;
+  border-radius: 1rem !important;
+  overflow: hidden !important;
+  transition: all 0.3s ease-in-out !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08) !important;
+  margin-bottom: 2rem !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  cursor: pointer !important;
+}
+
+.blogCard:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Image Container in Blog (Left side) */
+.blogImageContainer {
+  position: relative !important;
+  width: 250px !important;
+  height: 200px !important;
+  overflow: hidden !important;
+  border-radius: 1rem !important;
+  flex-shrink: 0 !important;
+}
+
+.blogImage {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transition: transform 0.4s ease-in-out !important;
+}
+
+.blogCard:hover .blogImage {
+  transform: scale(1.08) !important;
+}
+
+/* Blog Content Section (Right side) */
+.blogContentDefault {
+  flex-grow: 1 !important;
+  padding: 1.5rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+/* Meta Info (Category, Read Time, Bookmark) */
+.blogMetaDefault {
+  display: flex !important;
+  align-items: center !important;
+  font-size: 0.85rem !important;
+  color: #666 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.blogCategory {
+  font-weight: 600 !important;
+  margin-right: 0.5rem !important;
+  text-transform: uppercase !important;
+  color: #333 !important;
+}
+
+.blogReadTime {
+  margin-right: auto !important;
+  color: #666 !important;
+}
+
+.blogBookmark {
+  color: #999 !important;
+  font-size: 1.1rem !important;
+  cursor: pointer !important;
+}
+
+/* Blog Title */
+.blogTitleDefault {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  color: #212121 !important;
+  margin-bottom: 0.5rem !important;
+  line-height: 1.3 !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+/* Blog Excerpt */
+.blogExcerptDefault {
+  color: #555 !important;
+  font-size: 0.95rem !important;
+  line-height: 1.6 !important;
+  margin-bottom: 1rem !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 1 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+}
+
+/* Author and Stats Section */
+.blogAuthorStats {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  margin-top: auto !important;
+}
+
+.blogAuthorInfoDefault {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.blogAuthorAvatarDefault {
+  width: 2.2rem !important;
+  height: 2.2rem !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  margin-right: 0.6rem !important;
+  flex-shrink: 0 !important;
+}
+
+.blogAuthorAvatarDefault img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+.blogAuthorNameDefault {
+  font-weight: 600 !important;
+  color: #333 !important;
+  font-size: 0.9rem !important;
+  margin-right: 0.2rem !important;
+}
+
+.blogDateDefault {
+  color: #666 !important;
+  font-size: 0.8rem !important;
+}
+
+.blogStatsDefault {
+  display: flex !important;
+  align-items: center !important;
+  gap: 1rem !important;
+  color: #777 !important;
+  font-size: 0.85rem !important;
+}
+
+.blogLikesDefault, .blogCommentsDefault {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.3rem !important;
+  cursor: pointer !important;
+}
+
+.blogLikesDefault i {
+  font-size: 0.9rem !important;
+  color: #999 !important;
+}
+
+.blogCommentsDefault i {
+  font-size: 0.9rem !important;
+  color: #999 !important;
+}
+
+/* Search Section */
+.searchContainer {
+  background: white !important;
+  border-radius: 1rem !important;
+  padding: 2rem !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08) !important;
+  border: 1px solid #e0e0e0 !important;
+  position: sticky !important;
+  top: 6rem !important;
+  align-self: flex-start !important;
+}
+
+.searchTitle {
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  color: #212121 !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.searchInput {
+  width: 100% !important;
+  padding: 0.9rem 1.2rem !important;
+  border: 1px solid #d0d0d0 !important;
+  border-radius: 0.6rem !important;
+  font-size: 0.95rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.searchInput:focus {
+  outline: none !important;
+  border-color: #3f51b5 !important;
+  box-shadow: 0 0 0 4px rgba(63, 81, 181, 0.15) !important;
+}
+
+.createButton {
+  background: #3f51b5 !important;
+  color: white !important;
+  padding: 0.8rem 1.6rem !important;
+  border-radius: 0.6rem !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.6rem !important;
+  box-shadow: 0 4px 10px rgba(63, 81, 181, 0.2) !important;
+  text-decoration: none !important;
+}
+
+.createButton:hover {
+  background: #303f9f !important;
+  box-shadow: 0 6px 15px rgba(63, 81, 181, 0.3) !important;
+}
+
+/* Comment Section Styling */
+.commentSection {
+  background: #fdfdfe !important;
+  border-radius: 0.8rem !important;
+  padding: 1.5rem !important;
+  margin-top: 1.5rem !important;
+  border: 1px solid #eee !important;
+  box-shadow: inset 0 1px 5px rgba(0,0,0,0.05) !important;
+}
+
+.commentInputSection {
+  margin-top: 1rem !important;
+  padding-top: 1rem !important;
+  border-top: 1px solid #f0f0f0 !important;
+}
+
+.commentInput {
+  width: 100% !important;
+  padding: 0.75rem !important;
+  border: 1px solid #d0d0d0 !important;
+  border-radius: 0.5rem !important;
+  font-size: 0.9rem !important;
+  line-height: 1.5 !important;
+  resize: vertical !important;
+  min-height: 80px !important;
+  transition: border-color 0.2s ease !important;
+}
+
+.commentInput:focus {
+  outline: none !important;
+  border-color: #2196f3 !important;
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1) !important;
+}
+
+.commentSubmitButton {
+  margin-top: 0.75rem !important;
+  background: #2196f3 !important;
+  color: white !important;
+  border: none !important;
+  padding: 0.75rem 1.5rem !important;
+  border-radius: 0.5rem !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  float: right !important;
+}
+
+.commentSubmitButton:hover {
+  background: #1976d2 !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Member Home Blog List */
+.memberHomeBlogList {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1rem !important;
+  padding: 1rem 0 !important;
+  background-color: #f8f0e3 !important;
+}
+
+.memberHomeBlogGrid {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.5rem !important;
+}
+
+.memberHomeBlogCard {
+  background-color: #fff !important;
+  border-radius: 0.5rem !important;
+  border: 1px solid #e0e0e0 !important;
+  padding: 1rem !important;
+  cursor: pointer !important;
+  transition: box-shadow 0.2s ease-in-out !important;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.memberHomeBlogCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Member Home Blog Meta */
+.memberHomeBlogMetaTop {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  margin-bottom: 0.8rem !important;
+}
+
+.memberHomeAuthorInfo {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.memberHomeAuthorAvatar {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  margin-right: 0.75rem !important;
+  flex-shrink: 0 !important;
+}
+
+.memberHomeAuthorAvatar img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+.memberHomeAuthorName {
+  font-weight: 600 !important;
+  color: #333 !important;
+  font-size: 0.95rem !important;
+  margin-right: 0.2rem !important;
+}
+
+.memberHomeTimeAgo {
+  color: #666 !important;
+  font-size: 0.85rem !important;
+  margin-left: 0 !important;
+}
+
+.memberHomeBookmark i {
+  color: #999 !important;
+  font-size: 1.1rem !important;
+}
+
+/* Member Home Blog Title */
+.memberHomeBlogTitle {
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  color: #222 !important;
+  margin-bottom: 0.5rem !important;
+  line-height: 1.4 !important;
+  cursor: pointer !important;
+}
+
+/* Member Home Blog Excerpt */
+.memberHomeBlogExcerpt {
+  color: #555 !important;
+  font-size: 0.9rem !important;
+  line-height: 1.5 !important;
+  margin-bottom: 0.8rem !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+}
+
+/* Member Home Stats */
+.memberHomeStats {
+  font-size: 0.85rem !important;
+  color: #666 !important;
+  margin-bottom: 1rem !important;
+}
+
+.memberHomeLikesComments {
+  display: inline-block !important;
+  margin-right: 0.75rem !important;
+}
+
+/* Member Home Action Buttons */
+.memberHomeActionsFlex {
+  display: flex !important;
+  justify-content: space-around !important;
+  padding-top: 1rem !important;
+  border-top: 1px solid #f0f0f0 !important;
+}
+
+.actionButton {
+  background: none !important;
+  border: none !important;
+  color: #666 !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+  cursor: pointer !important;
+  padding: 0.5rem 0.8rem !important;
+  border-radius: 0.25rem !important;
+  transition: all 0.2s ease-in-out !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+}
+
+.actionButton i {
+  font-size: 1rem !important;
+}
+
+.actionButton:hover {
+  background-color: #f2f2f2 !important;
+  color: #0a66c2 !important;
+}
+
+/* Comments Section for Member Home */
+.commentsSection {
+  margin-top: 1.5rem !important;
+  padding-top: 1rem !important;
+  border-top: 1px solid #f0f0f0 !important;
+}
+
+.commentsTitle {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  color: #333 !important;
+  margin-bottom: 1rem !important;
+}
+
+.commentList {
+  margin-bottom: 1rem !important;
+}
+
+.commentItem {
+  background-color: #f9f9f9 !important;
+  border-radius: 0.5rem !important;
+  padding: 0.8rem 1rem !important;
+  margin-bottom: 0.5rem !important;
+  border: 1px solid #eee !important;
+}
+
+.commentAuthor {
+  font-weight: 600 !important;
+  color: #333 !important;
+  font-size: 0.9rem !important;
+  margin-bottom: 0.2rem !important;
+}
+
+.commentContent {
+  color: #555 !important;
+  font-size: 0.85rem !important;
+  line-height: 1.4 !important;
+}
+
+.commentDate {
+  font-size: 0.75rem !important;
+  color: #999 !important;
+  margin-top: 0.4rem !important;
+  text-align: right !important;
+}
+
+.addCommentForm {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.75rem !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem !important;
+    margin-top: 3rem !important;
+  }
+  
+  .memberHomeBlogCard {
+    padding: 0.8rem !important;
+  }
+
+  .memberHomeAuthorAvatar {
+    width: 2rem !important;
+    height: 2rem !important;
+  }
+
+  .memberHomeAuthorName {
+    font-size: 0.9rem !important;
+  }
+
+  .memberHomeTimeAgo {
+    font-size: 0.8rem !important;
+  }
+
+  .memberHomeBlogTitle {
+    font-size: 1.1rem !important;
+  }
+
+  .memberHomeBlogExcerpt {
+    font-size: 0.85rem !important;
+  }
+
+  .memberHomeActionsFlex {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+
+  .actionButton {
+    width: 48% !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .actionButton:nth-child(odd) {
+    margin-right: 4% !important;
+  }
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.25);
+  z-index: 1000;
+  display: flex; align-items: center; justify-content: center;
+}
+.modalCard {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.15);
+  min-width: 320px;
+  max-width: 90vw;
+  text-align: center;
+  animation: fadeInPopup 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+.modalTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.modalActions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.modalButton {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.modalButton:hover {
+  background: #4338ca;
+}
+.modalButtonDanger {
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.modalButtonDanger:hover {
+  background: #b91c1c;
+}

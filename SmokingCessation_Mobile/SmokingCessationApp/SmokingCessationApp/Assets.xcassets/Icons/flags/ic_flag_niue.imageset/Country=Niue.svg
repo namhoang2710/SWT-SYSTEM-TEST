@@ -1,0 +1,35 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2214_3859)">
+<g clip-path="url(#clip1_2214_3859)">
+<path d="M42 0H-6V24H42V0Z" fill="#012169"/>
+<path d="M-6 0L18 12L-6 0ZM18 0L-6 12L18 0Z" fill="black"/>
+<path d="M-6 0L18 12M18 0L-6 12" stroke="white" stroke-width="2.4"/>
+<mask id="mask0_2214_3859" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-6" y="0" width="28" height="16">
+<path d="M-6 0V6H22V12H18L-6 0ZM-6 12V16H6V0H18L-6 12Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_2214_3859)">
+<path d="M-6 0L18 12L-6 0ZM18 0L-6 12L18 0Z" fill="black"/>
+<path d="M-6 0L18 12M18 0L-6 12" stroke="#C8102E" stroke-width="1.6"/>
+</g>
+<path d="M6 0V16V0ZM-6 6H22H-6Z" fill="black"/>
+<path d="M6 0V16M-6 6H22" stroke="white" stroke-width="4"/>
+<path d="M6 0V16V0ZM-6 6H22H-6Z" fill="black"/>
+<path d="M6 0V16M-6 6H22" stroke="#C8102E" stroke-width="2.4"/>
+<path d="M18 0H42V24H-6V12H18V0Z" fill="#FEDD00"/>
+<path d="M5.99981 8.04113C7.12734 8.04113 8.04138 7.12709 8.04138 5.99957C8.04138 4.87205 7.12734 3.95801 5.99981 3.95801C4.87229 3.95801 3.95825 4.87205 3.95825 5.99957C3.95825 7.12709 4.87229 8.04113 5.99981 8.04113Z" fill="#012169"/>
+<path d="M5.99981 3.95801L7.19981 7.65123L4.05817 5.36869H7.94145L4.79981 7.65123" fill="#FEDD00"/>
+<path d="M-1.00009 4.91602L-0.294747 7.08684L-2.14136 5.7452H0.141178L-1.70543 7.08684" fill="#FEDD00"/>
+<path d="M12.9999 4.91602L13.7053 7.08684L11.8586 5.7452H14.1412L12.2946 7.08684" fill="#FEDD00"/>
+<path d="M5.99991 8.91602L6.70525 11.0868L4.85864 9.7452H7.14118L5.29457 11.0868" fill="#FEDD00"/>
+<path d="M5.99991 0.916016L6.70525 3.08684L4.85864 1.7452H7.14118L5.29457 3.08684" fill="#FEDD00"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_2214_3859">
+<path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="white"/>
+</clipPath>
+<clipPath id="clip1_2214_3859">
+<rect width="48" height="24" fill="white" transform="translate(-6)"/>
+</clipPath>
+</defs>
+</svg>

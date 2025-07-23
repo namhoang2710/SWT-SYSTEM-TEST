@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Country=Venezuela.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

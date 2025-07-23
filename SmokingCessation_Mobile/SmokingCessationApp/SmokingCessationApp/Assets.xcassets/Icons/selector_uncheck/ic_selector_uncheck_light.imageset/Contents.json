@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_selector_uncheck_light.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

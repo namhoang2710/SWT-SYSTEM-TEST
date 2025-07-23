@@ -1,0 +1,722 @@
+ /* HomePage.module.css */
+.container {
+    padding: 0;
+    background: #f8f8f8; /* Light grey background */
+    min-height: 100vh;
+    display: flex; /* Use flex to contain the banner and potential other sections */
+    flex-direction: column;
+}
+
+.mainContent {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+}
+
+/* Hero Section (Full Screen Banner) */
+.heroSection {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    width: 100%;
+    min-height: 100vh; /* Ensure it covers the viewport height */
+    background-image: url('/public/images/bannerhome.webp');/* Use your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Parallax effect */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* No padding here */
+}
+
+/* General semi-transparent white overlay */
+.heroSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.6); /* Reverted to previous opacity */
+    z-index: 0; /* Ensure overlay is behind content */
+}
+
+/* Content Block (Narrow and Centered Text) */
+.heroContent {
+    position: relative;
+    z-index: 1; /* Ensure content is above overlay */
+    max-width: 800px; /* Max width for the text block, adjust as needed */
+    width: 100%; /* Ensure it takes full width up to max-width */
+    margin: 0 auto; /* Center the block */
+    text-align: center;
+    padding: 9rem 0; /* Default padding */
+    /* No direct background or blur here */
+    /* Reverted display, justify-content, align-items, height */
+}
+
+/* Style when user is authenticated */
+.authenticatedContent {
+    padding: 11rem 0;
+}
+
+/* Gradient overlay specifically behind the text */
+.heroContent::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* White gradient from transparent edges to opaque center */
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 5%,
+        rgba(255, 255, 255, 1) 95%,
+        rgba(255, 255, 255, 0) 100%
+    ); /* Reverted to previous gradient opacity and stops */
+    z-index: -1; /* Behind the text, above the general overlay */
+    pointer-events: none; /* Allow clicks to pass through */
+    /* Reverted border-radius */
+}
+
+.heroTitle {
+    font-size: 3.5rem; /* Reverted to previous size */
+    font-weight: 800; /* Reverted to previous weight */
+    margin-bottom: 1.5rem; /* Reverted to previous margin */
+    line-height: 1.1;
+    color: #000; /* Set color to black */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Reverted to previous shadow */
+}
+
+.heroSubtitle {
+    font-size: 1.25rem; /* Reverted to previous size */
+    line-height: 1.5;
+    margin-bottom: 2.5rem;
+    color: #333; /* Set color to darker grey */
+    font-weight: 400; /* Reverted to previous weight */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Reverted to previous shadow */
+}
+
+.heroButtons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center; /* Center the buttons */
+}
+
+.exploreButtonContainer {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.exploreButton {
+    background-color: #28a745; /* Green */
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.exploreButton:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.exploreButton:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add styles for buttons if needed */
+
+@media (max-width: 1024px) {
+    .heroContent {
+        max-width: 700px; /* Reverted to previous max-width */
+        /* padding kept as 9rem 0 by default */
+    }
+    .authenticatedContent {
+        padding: 11rem 0;
+    }
+    /* Removed .heroInnerContent adjustments */
+    .heroTitle {
+        font-size: 3rem; /* Reverted to previous size */
+    }
+
+    .heroSubtitle {
+        font-size: 1.15rem; /* Reverted to previous size */
+    }
+    /* Reverted gradient stops for smaller screens */
+    .heroContent::after {
+        background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 1) 20%,
+            rgba(255, 255, 255, 1) 80%,
+            rgba(255, 255, 255, 0) 100%
+        );
+    }
+}
+
+@media (max-width: 768px) {
+    .heroSection {
+        padding: 0;
+    }
+    
+    .heroContent {
+        max-width: 90%; /* Reverted to previous max-width */
+        padding: 1.5rem 0; /* Default padding for mobile */
+    }
+    .authenticatedContent {
+         padding: 11rem 0;
+    }
+    /* Removed .heroInnerContent adjustments */
+    .heroTitle {
+        font-size: 2.5rem; /* Reverted to previous size */
+    }
+
+    .heroSubtitle {
+        font-size: 1rem; /* Reverted to previous size */
+    }
+    /* Reverted gradient stops for mobile */
+    .heroContent::after {
+        background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 1) 10%,
+            rgba(255, 255, 255, 1) 90%,
+            rgba(255, 255, 255, 0) 100%
+        );
+    }
+}
+
+@media (max-width: 480px) {
+    .heroContent {
+         padding: 1rem 0; /* Default padding for small mobile */
+    }
+    .authenticatedContent {
+        padding: 11rem 0;
+    }
+    /* Removed .heroInnerContent adjustments */
+    .heroTitle {
+        font-size: 2rem; /* Reverted to previous size */
+    }
+
+    .heroSubtitle {
+        font-size: 0.9rem; /* Reverted to previous size */
+    }
+    
+    .heroButtons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    /* Reverted gradient stops for small mobile */
+    .heroContent::after {
+        background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 1) 5%,
+            rgba(255, 255, 255, 1) 95%,
+            rgba(255, 255, 255, 0) 100%
+        );
+    }
+
+}
+
+/* Banner Section */
+.bannerSection {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/src/assets/bannerhome.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.bannerSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+}
+
+.bannerContent {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 2rem;
+}
+
+.bannerText {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 3rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.bannerTitle {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.bannerDescription {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Auth Buttons Section */
+.authButtonsContainer {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 300px;
+    background: white;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    z-index: 10;
+}
+
+.authButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.userProfile {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.accbitButton {
+    /* Add styles for the Accbit button if needed */
+    padding: 1rem 2rem;
+    background-color: #f0f0f0; /* Example color */
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.accbitButton:hover {
+    background-color: #e0e0e0;
+}
+
+.loginButton {
+    padding: 1rem 2rem;
+    background-color: #fff; /* White background */
+    color: #8b5cf6; /* Light purple text color */
+    border: 1px solid #8b5cf6; /* Add a border for clarity */
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    width: 180px; /* Set fixed width */
+    text-align: center; /* Center text */
+}
+
+.loginButton:hover {
+    background-color: #f0f0f0; /* Slightly gray background on hover */
+    color: #7a4cd6; /* Slightly darker purple on hover */
+    border-color: #7a4cd6;
+}
+
+.registerButton {
+    padding: 1rem 2rem;
+    background-color: #8b5cf6; /* Purple background */
+    color: white; /* White text */
+    border: none; /* No border for a bolder look */
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600; /* Make text bolder */
+    transition: background-color 0.3s ease;
+    width: 180px; /* Set fixed width */
+    text-align: center; /* Center text */
+}
+
+.registerButton:hover {
+    background-color: #7a4cd6; /* Slightly darker purple on hover */
+}
+
+.userAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.userName {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.userRole {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.logoutButton {
+    /* Add styles for the Logout button if needed */
+    padding: 0.5rem 1rem;
+    background-color: #dc3545; /* Example danger color */
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5rem; /* Space above logout button */
+}
+
+.logoutButton:hover {
+    background-color: #c82333;
+}
+
+.features {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.featuresTitle {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    color: #333;
+}
+
+.featureCardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featureCard {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* Needed for pseudo-element */
+    overflow: hidden; /* Hide overflowing pseudo-element */
+}
+
+.featureCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #007bff, #28a745); /* Gradient color bar at the top */
+    opacity: 0.8;
+    transition: height 0.3s ease, opacity 0.3s ease;
+}
+
+.featureCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.featureCard:hover::before {
+    height: 10px; /* Increase height on hover */
+    opacity: 1;
+}
+
+.featureIcon {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.featureTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: #333;
+}
+
+.featureDescription {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.blogSection {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.blogTitle {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    color: #333;
+    position: relative;
+    display: inline-block; /* To center the underline */
+}
+
+.blogTitle::after {
+    content: '';
+    position: absolute;
+    left: 50%; /* Center the underline */
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #007bff, #28a745); /* Gradient underline */
+    border-radius: 2px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeIn {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .mainContent {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items when stacked */
+    }
+    .authButtonsContainer {
+        position: static; /* Remove absolute positioning */
+        width: auto; /* Allow container to take full width */
+        margin-top: 2rem; /* Add space above auth buttons when stacked */
+        box-shadow: none; /* Remove shadow when not fixed */
+        background: none; /* Remove white background */
+        padding: 0;
+    }
+    .heroSection {
+        min-height: 60vh; /* Reduce hero section height on tablets */
+    }
+}
+
+@media (max-width: 640px) {
+    .heroSection {
+        padding: 0;
+        min-height: 50vh; /* Further reduce hero section height on mobile */
+    }
+    .heroTitle {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+    .heroSubtitle {
+        font-size: 1.1rem; /* Adjust font size for smaller screens */
+    }
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.mt1 { margin-top: 0.5rem; }
+.mt2 { margin-top: 1rem; }
+.mt3 { margin-top: 1.5rem; }
+.mt4 { margin-top: 2rem; }
+.mb1 { margin-bottom: 0.5rem; }
+.mb2 { margin-bottom: 1rem; }
+.mb3 { margin-bottom: 1.5rem; }
+.mb4 { margin-bottom: 2rem; }
+
+@media (max-width: 1024px) {
+    .bannerTitle {
+        font-size: 3rem;
+    }
+    .bannerDescription {
+        font-size: 1.1rem;
+    }
+    .bannerText {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .bannerTitle {
+        font-size: 2.5rem;
+    }
+    .bannerDescription {
+        font-size: 1rem;
+    }
+     .bannerText {
+        padding: 1.5rem;
+    }
+    .bannerContent {
+      padding: 0 1rem;
+    }
+}
+
+.highlightText {
+    color: #8b5cf6; /* Purple color for highlighted text */
+    font-weight: inherit; /* Keep existing font weight */
+}
+
+.heroQuote {
+    font-size: 2rem; /* Larger font size for the quote */
+    font-weight: 600; /* Bolder font weight for the quote */
+    margin: 1.5rem 0; /* Add some margin above and below the quote */
+    line-height: 1.4; /* Adjust line height for readability */
+    color: #1a1a1a; /* Darker color for prominence */
+}
+
+.separatorLine {
+    width: 200px; /* Increased width */
+    height: 2px; /* Thickness of the line */
+    background-color: #888; /* Changed color to gray */
+    margin: 2rem auto; /* Center the line and add vertical margin */
+} 
+
+.leaderboardSection {
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.leaderboardContainer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .leaderboardSection {
+    padding: 2rem 1rem;
+  }
+  
+  .leaderboardContainer {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.billboardSection {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #f8f9fa;
+}
+
+.billboardContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Package Section */
+.packageSection {
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+  position: relative;
+  overflow: hidden;
+}
+
+.packageSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #e2e8f0, transparent);
+}
+
+.packageContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.packageTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.packageTitle::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #22c55e, #0ea5e9);
+  border-radius: 2px;
+}
+
+.packageSubtitle {
+  font-size: 1.125rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 2rem auto 3rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .packageSection {
+    padding: 3rem 1rem;
+  }
+
+  .packageTitle {
+    font-size: 2rem;
+  }
+
+  .packageSubtitle {
+    font-size: 1rem;
+    margin: 1.5rem auto 2rem;
+  }
+}
+

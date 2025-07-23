@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "logo_tymebank_inverse.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

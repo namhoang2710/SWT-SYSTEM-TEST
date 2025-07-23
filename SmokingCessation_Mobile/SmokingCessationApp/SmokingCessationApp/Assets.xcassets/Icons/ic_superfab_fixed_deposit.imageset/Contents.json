@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_superfab_fixed_deposit.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

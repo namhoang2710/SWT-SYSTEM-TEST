@@ -1,0 +1,26 @@
+.highlight-animated-comment {
+  animation: highlightOutlineGlow 1.2s cubic-bezier(0.4,0,0.2,1);
+  box-shadow: 0 0 0 0 #a5b4fc;
+  border-radius: 12px;
+  background: transparent;
+}
+@keyframes highlightOutlineGlow {
+  0% {
+    box-shadow: 0 0 0 0 #a5b4fc;
+  }
+  20% {
+    box-shadow: 0 0 0 8px #a5b4fc99, 0 0 16px 2px #6366f1cc;
+  }
+  60% {
+    box-shadow: 0 0 0 5px #a5b4fc88, 0 0 8px 1px #6366f1aa;
+  }
+  100% {
+    box-shadow: 0 0 0 0 #a5b4fc00;
+  }
+}
+.highlight-animated-blog {
+  animation: highlightOutlineGlow 1.2s cubic-bezier(0.4,0,0.2,1);
+  box-shadow: 0 0 0 0 #a5b4fc;
+  border-radius: 22px;
+  background: transparent;
+} 

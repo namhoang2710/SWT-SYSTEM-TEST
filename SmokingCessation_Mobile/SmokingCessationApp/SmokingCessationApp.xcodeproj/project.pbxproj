@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF871373739416A887C9B8D8 /* Pods_SmokingCessationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AA76FAB8FC70CCFC12158C /* Pods_SmokingCessationApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		687540522DEE1C3D00EF5FB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 687540332DEE1C3C00EF5FB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6875403A2DEE1C3C00EF5FB2;
+			remoteInfo = SmokingCessationApp;
+		};
+		6875405C2DEE1C3D00EF5FB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 687540332DEE1C3C00EF5FB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6875403A2DEE1C3C00EF5FB2;
+			remoteInfo = SmokingCessationApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		57AA76FAB8FC70CCFC12158C /* Pods_SmokingCessationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmokingCessationApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6875403B2DEE1C3C00EF5FB2 /* SmokingCessationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmokingCessationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		687540512DEE1C3D00EF5FB2 /* SmokingCessationAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmokingCessationAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6875405B2DEE1C3D00EF5FB2 /* SmokingCessationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmokingCessationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B947DA0FC5E6B74BF71945 /* Pods-SmokingCessationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmokingCessationApp.debug.xcconfig"; path = "Target Support Files/Pods-SmokingCessationApp/Pods-SmokingCessationApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DC1210EA2A41264EC4DC6202 /* Pods-SmokingCessationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmokingCessationApp.release.xcconfig"; path = "Target Support Files/Pods-SmokingCessationApp/Pods-SmokingCessationApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		687540632DEE1C3D00EF5FB2 /* Exceptions for "SmokingCessationApp" folder in "SmokingCessationApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6875403A2DEE1C3C00EF5FB2 /* SmokingCessationApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		6875403D2DEE1C3C00EF5FB2 /* SmokingCessationApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				687540632DEE1C3D00EF5FB2 /* Exceptions for "SmokingCessationApp" folder in "SmokingCessationApp" target */,
+			);
+			path = SmokingCessationApp;
+			sourceTree = "<group>";
+		};
+		687540542DEE1C3D00EF5FB2 /* SmokingCessationAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SmokingCessationAppTests;
+			sourceTree = "<group>";
+		};
+		6875405E2DEE1C3D00EF5FB2 /* SmokingCessationAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SmokingCessationAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		687540382DEE1C3C00EF5FB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF871373739416A887C9B8D8 /* Pods_SmokingCessationApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6875404E2DEE1C3D00EF5FB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		687540582DEE1C3D00EF5FB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		687540322DEE1C3C00EF5FB2 = {
+			isa = PBXGroup;
+			children = (
+				6875403D2DEE1C3C00EF5FB2 /* SmokingCessationApp */,
+				687540542DEE1C3D00EF5FB2 /* SmokingCessationAppTests */,
+				6875405E2DEE1C3D00EF5FB2 /* SmokingCessationAppUITests */,
+				6875403C2DEE1C3C00EF5FB2 /* Products */,
+				EFD26F5F94864F7CB61F2E9B /* Pods */,
+				E877F45D9279D4C6804198D5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6875403C2DEE1C3C00EF5FB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6875403B2DEE1C3C00EF5FB2 /* SmokingCessationApp.app */,
+				687540512DEE1C3D00EF5FB2 /* SmokingCessationAppTests.xctest */,
+				6875405B2DEE1C3D00EF5FB2 /* SmokingCessationAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E877F45D9279D4C6804198D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57AA76FAB8FC70CCFC12158C /* Pods_SmokingCessationApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFD26F5F94864F7CB61F2E9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5B947DA0FC5E6B74BF71945 /* Pods-SmokingCessationApp.debug.xcconfig */,
+				DC1210EA2A41264EC4DC6202 /* Pods-SmokingCessationApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6875403A2DEE1C3C00EF5FB2 /* SmokingCessationApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 687540642DEE1C3D00EF5FB2 /* Build configuration list for PBXNativeTarget "SmokingCessationApp" */;
+			buildPhases = (
+				2BECB40DE387858610F62589 /* [CP] Check Pods Manifest.lock */,
+				687540372DEE1C3C00EF5FB2 /* Sources */,
+				687540382DEE1C3C00EF5FB2 /* Frameworks */,
+				687540392DEE1C3C00EF5FB2 /* Resources */,
+				5AF5DF4FE8BDFE7E2E7A355D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6875403D2DEE1C3C00EF5FB2 /* SmokingCessationApp */,
+			);
+			name = SmokingCessationApp;
+			productName = SmokingCessationApp;
+			productReference = 6875403B2DEE1C3C00EF5FB2 /* SmokingCessationApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		687540502DEE1C3D00EF5FB2 /* SmokingCessationAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 687540692DEE1C3D00EF5FB2 /* Build configuration list for PBXNativeTarget "SmokingCessationAppTests" */;
+			buildPhases = (
+				6875404D2DEE1C3D00EF5FB2 /* Sources */,
+				6875404E2DEE1C3D00EF5FB2 /* Frameworks */,
+				6875404F2DEE1C3D00EF5FB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				687540532DEE1C3D00EF5FB2 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				687540542DEE1C3D00EF5FB2 /* SmokingCessationAppTests */,
+			);
+			name = SmokingCessationAppTests;
+			productName = SmokingCessationAppTests;
+			productReference = 687540512DEE1C3D00EF5FB2 /* SmokingCessationAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6875405A2DEE1C3D00EF5FB2 /* SmokingCessationAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6875406C2DEE1C3D00EF5FB2 /* Build configuration list for PBXNativeTarget "SmokingCessationAppUITests" */;
+			buildPhases = (
+				687540572DEE1C3D00EF5FB2 /* Sources */,
+				687540582DEE1C3D00EF5FB2 /* Frameworks */,
+				687540592DEE1C3D00EF5FB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6875405D2DEE1C3D00EF5FB2 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6875405E2DEE1C3D00EF5FB2 /* SmokingCessationAppUITests */,
+			);
+			name = SmokingCessationAppUITests;
+			productName = SmokingCessationAppUITests;
+			productReference = 6875405B2DEE1C3D00EF5FB2 /* SmokingCessationAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		687540332DEE1C3C00EF5FB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					6875403A2DEE1C3C00EF5FB2 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					687540502DEE1C3D00EF5FB2 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 6875403A2DEE1C3C00EF5FB2;
+					};
+					6875405A2DEE1C3D00EF5FB2 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 6875403A2DEE1C3C00EF5FB2;
+					};
+				};
+			};
+			buildConfigurationList = 687540362DEE1C3C00EF5FB2 /* Build configuration list for PBXProject "SmokingCessationApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 687540322DEE1C3C00EF5FB2;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6875403C2DEE1C3C00EF5FB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6875403A2DEE1C3C00EF5FB2 /* SmokingCessationApp */,
+				687540502DEE1C3D00EF5FB2 /* SmokingCessationAppTests */,
+				6875405A2DEE1C3D00EF5FB2 /* SmokingCessationAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		687540392DEE1C3C00EF5FB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6875404F2DEE1C3D00EF5FB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		687540592DEE1C3D00EF5FB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BECB40DE387858610F62589 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmokingCessationApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AF5DF4FE8BDFE7E2E7A355D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmokingCessationApp/Pods-SmokingCessationApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmokingCessationApp/Pods-SmokingCessationApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmokingCessationApp/Pods-SmokingCessationApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		687540372DEE1C3C00EF5FB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6875404D2DEE1C3D00EF5FB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		687540572DEE1C3D00EF5FB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		687540532DEE1C3D00EF5FB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6875403A2DEE1C3C00EF5FB2 /* SmokingCessationApp */;
+			targetProxy = 687540522DEE1C3D00EF5FB2 /* PBXContainerItemProxy */;
+		};
+		6875405D2DEE1C3D00EF5FB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6875403A2DEE1C3C00EF5FB2 /* SmokingCessationApp */;
+			targetProxy = 6875405C2DEE1C3D00EF5FB2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		687540652DEE1C3D00EF5FB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5B947DA0FC5E6B74BF71945 /* Pods-SmokingCessationApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmokingCessationApp/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "\"Ứng dụng cần Face ID để bảo vệ nhật ký hút thuốc của bạn.\"";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = duyhnt.SmokingCessationApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		687540662DEE1C3D00EF5FB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC1210EA2A41264EC4DC6202 /* Pods-SmokingCessationApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmokingCessationApp/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "\"Ứng dụng cần Face ID để bảo vệ nhật ký hút thuốc của bạn.\"";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = duyhnt.SmokingCessationApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		687540672DEE1C3D00EF5FB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		687540682DEE1C3D00EF5FB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6875406A2DEE1C3D00EF5FB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = duyhnt.SmokingCessationAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmokingCessationApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmokingCessationApp";
+			};
+			name = Debug;
+		};
+		6875406B2DEE1C3D00EF5FB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = duyhnt.SmokingCessationAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmokingCessationApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmokingCessationApp";
+			};
+			name = Release;
+		};
+		6875406D2DEE1C3D00EF5FB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = duyhnt.SmokingCessationAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmokingCessationApp;
+			};
+			name = Debug;
+		};
+		6875406E2DEE1C3D00EF5FB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = duyhnt.SmokingCessationAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmokingCessationApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		687540362DEE1C3C00EF5FB2 /* Build configuration list for PBXProject "SmokingCessationApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				687540672DEE1C3D00EF5FB2 /* Debug */,
+				687540682DEE1C3D00EF5FB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		687540642DEE1C3D00EF5FB2 /* Build configuration list for PBXNativeTarget "SmokingCessationApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				687540652DEE1C3D00EF5FB2 /* Debug */,
+				687540662DEE1C3D00EF5FB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		687540692DEE1C3D00EF5FB2 /* Build configuration list for PBXNativeTarget "SmokingCessationAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6875406A2DEE1C3D00EF5FB2 /* Debug */,
+				6875406B2DEE1C3D00EF5FB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6875406C2DEE1C3D00EF5FB2 /* Build configuration list for PBXNativeTarget "SmokingCessationAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6875406D2DEE1C3D00EF5FB2 /* Debug */,
+				6875406E2DEE1C3D00EF5FB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 687540332DEE1C3C00EF5FB2 /* Project object */;
+}

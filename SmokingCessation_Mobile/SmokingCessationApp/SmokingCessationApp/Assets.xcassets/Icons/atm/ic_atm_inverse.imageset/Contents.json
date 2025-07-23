@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_atm_inverse.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
