@@ -15,6 +15,7 @@ import MemberHomePage from './components/MemberHomePage';
 import EditBlogPage from './components/EditBlogPage';
 import PackagesPage from './components/PackagesPage';
 import VerifyPage from './components/VerifyPage';
+import ResetPasswordPage from './components/ResetPasswordPage';
 import SmokingProgressForm from './components/SmokingProgressForm';
 import ConsultationPage from './components/ConsultationPage';
 import CoachSchedulePage from './components/CoachSchedulePage';
@@ -245,6 +246,9 @@ function App() {
             } 
           />
           <Route path="/progress/plan" element={<ProgressPlanPage />} />
+          
+          {/* Reset Password Route */}
+          <Route path="/reset-password" element={<ResetPasswordPage />} />
           
           {/* FALLBACK */}
           <Route path="*" element={<Navigate to="/" replace />} />

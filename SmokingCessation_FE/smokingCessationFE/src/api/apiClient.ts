@@ -5,8 +5,8 @@ import { toast } from 'react-toastify';
 
 
 
-//const BASE_URL = "https://smoking-cessation.onrender.com/api";
-  const BASE_URL = "http://localhost:8080/api";
+const BASE_URL = "https://smoking-cessation.onrender.com/api";
+//  const BASE_URL = "http://localhost:8080/api";
 
 
 console.log('API Base URL:', BASE_URL); 
