@@ -158,6 +158,22 @@ function App() {
             } 
           />
           <Route 
+            path="/coach-members" 
+            element={
+              <ProtectedRoute>
+                <HomeForCoach />
+              </ProtectedRoute>
+            } 
+          />
+          <Route 
+            path="/coach-statistics" 
+            element={
+              <ProtectedRoute>
+                <HomeForCoach />
+              </ProtectedRoute>
+            } 
+          />
+          <Route 
             path="/coach/member/:memberId/create-plan" 
             element={
               <ProtectedRoute>

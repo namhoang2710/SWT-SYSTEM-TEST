@@ -23,7 +23,7 @@ interface MemberInfo {
 }
 
 const HomeForCoach: React.FC = () => {
-  const { user } = useAuth();
+  const { user, logout } = useAuth();
   const navigate = useNavigate();
   const [myMembers, setMyMembers] = React.useState<MemberInfo[]>([]);
   const [loadingMembers, setLoadingMembers] = React.useState(false);
@@ -215,6 +215,21 @@ const HomeForCoach: React.FC = () => {
     return '🏅';
   };
 
+  // Thêm hàm xử lý cho các nút trong sidebar
+  const handleNavigate = (path: string) => {
+    navigate(path);
+  };
+
+  const handleLogout = async () => {
+    try {
+      await logout();
+      navigate('/login');
+    } catch (error) {
+      console.error('Logout failed:', error);
+      toast.error('Đăng xuất thất bại. Vui lòng thử lại.');
+    }
+  };
+
   return (
     <div style={{ display: 'flex', minHeight: '100vh', background: '#f8fafc' }}>
       <style>{`
@@ -253,19 +268,34 @@ const HomeForCoach: React.FC = () => {
         <div style={{ width: '100%', marginBottom: 18 }}>
           <div style={{ fontWeight: 700, fontSize: 16, color: '#a5b4fc', textAlign: 'center', marginBottom: 18 }}>Bảng điều khiển</div>
           <ul style={{ listStyle: 'none', padding: 0, margin: 0, width: '100%' }}>
-            <li style={{ marginBottom: 18, cursor: 'pointer', color: '#fff', fontWeight: 700, fontSize: 17, textAlign: 'center' }}>
+            <li 
+              style={{ marginBottom: 18, cursor: 'pointer', color: '#fff', fontWeight: 700, fontSize: 17, textAlign: 'center' }}
+              onClick={() => handleNavigate('/home')}
+            >
               Dashboard
             </li>
-            <li style={{ marginBottom: 18, cursor: 'pointer', color: '#fff', fontWeight: 700, fontSize: 17, textAlign: 'center' }}>
+            <li 
+              style={{ marginBottom: 18, cursor: 'pointer', color: '#fff', fontWeight: 700, fontSize: 17, textAlign: 'center' }}
+              onClick={() => handleNavigate('/coach-schedule')}
+            >
               Lịch trình
             </li>
-            <li style={{ marginBottom: 18, cursor: 'pointer', color: '#fff', fontWeight: 700, fontSize: 17, textAlign: 'center' }}>
+            <li 
+              style={{ marginBottom: 18, cursor: 'pointer', color: '#fff', fontWeight: 700, fontSize: 17, textAlign: 'center' }}
+              onClick={() => handleNavigate('/coach-members')}
+            >
               Khách hàng của tôi
             </li>
-            <li style={{ marginBottom: 18, cursor: 'pointer', color: '#fff', fontWeight: 700, fontSize: 17, textAlign: 'center' }}>
+            <li 
+              style={{ marginBottom: 18, cursor: 'pointer', color: '#fff', fontWeight: 700, fontSize: 17, textAlign: 'center' }}
+              onClick={() => handleNavigate('/coach-statistics')}
+            >
               Thống kê
             </li>
-            <li style={{ marginBottom: 0, cursor: 'pointer', color: '#fff', fontWeight: 700, fontSize: 17, textAlign: 'center' }}>
+            <li 
+              style={{ marginBottom: 0, cursor: 'pointer', color: '#fff', fontWeight: 700, fontSize: 17, textAlign: 'center' }}
+              onClick={handleLogout}
+            >
               Đăng xuất
             </li>
           </ul>
